@@ -1,0 +1,20 @@
+{
+  "checked": "2026-11-16",
+  "proceedings": {
+    "2024-261": "https://crtc.gc.ca/eng/archive/2024/2024-261.htm",
+    "2026-77": "https://crtc.gc.ca/eng/archive/2026/2026-77.htm"
+  },
+  "markets": {
+    "bell": ["Bell Canada", "Ontario and Quebec", "5460", "2024-10-25", "2025-01-20"],
+    "telus-west": ["TELUS", "Alberta and British Columbia", "236", "2025-02-13", "2025-02-13"],
+    "telus-qc": ["TELUS", "Quebec", "4.10", "2024-10-25", "2025-01-20"]
+  },
+  "tables": [
+    {"market":"bell","order":"2024-261","access":[["3–1,500 Mbps", "68.94"],["1,501–3,000 Mbps","78.03"]],"capacity":"64.24","install":["10.60","244.13"]},
+    {"market":"telus-west","order":"2024-261","access":[["15–1,500 Mbps", "80.41"]],"capacity":"75.86","install":["6.63","250.66"]},
+    {"market":"telus-qc","order":"2024-261","access":[["All speeds as listed","65.25"]],"capacity":"75.86","install":["6.63","250.66"]},
+    {"market":"bell","order":"2026-77","access":[["3–1,500 Mbps","68.26"],["1,501–8,000 Mbps","77.20"]],"capacity":"44.19","install":["10.46","240.86"]},
+    {"market":"telus-west","order":"2026-77","access":[["15–1,500 Mbps","77.21"],["1,501–5,000 Mbps","81.81"]],"capacity":"42.12","install":["6.71","250.67"]},
+    {"market":"telus-qc","order":"2026-77","access":[["15–1,500 Mbps","57.86"],["1,501–5,000 Mbps","62.45"]],"capacity":"42.12","install":["6.71","250.67"]}
+  ]
+}

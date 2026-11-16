@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Search CRTC wholesale fibre rates for Bell and TELUS, see the terms of each published charge, and compare documented versions.">
+<title>Tariff X-Ray · CoolCode</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.mjs" type="module"></script>
+</head>
+<body class="tariffxray">
+<a class="skip" href="#main">Skip to search</a>
+<header class="dark">
+  <nav class="wrap">
+    <a class="brand" href="https://coolcode.ca/"><b aria-hidden="true">&gt;_</b>CoolCode.ca</a>
+    <a class="nav-link" href="https://crtc.gc.ca/eng/archive/2026/2026-77.htm" target="_blank" rel="noopener noreferrer">Official source ↗</a>
+  </nav>
+  <div class="wrap hero">
+    <div><h1>Tariff <span>X-Ray</span></h1><p>Search CRTC wholesale fibre rates for Bell and TELUS, see the terms of each published charge, and compare documented versions.</p></div>
+    <aside class="snapshot" aria-label="Index snapshot"><p>Source snapshot</p><strong id="coverage">Loading index…</strong><span id="updated"></span></aside>
+  </div>
+</header>
+<main id="main" class="wrap">
+<section aria-labelledby="search-heading">
+  <div class="section-head"><h2 id="search-heading">Find a tariff rate</h2><button type="button" id="export" disabled>Download CSV</button></div>
+  <noscript>This explorer needs JavaScript to search. The official source is linked above.</noscript>
+  <div id="quick" class="quick" aria-label="Example searches" hidden></div>
+  <form id="filters" class="filters" role="search" hidden>
+    <label>Search<input id="query" type="search" placeholder="Try TELUS BC, 5460, or capacity" autocomplete="off"></label>
+    <label id="facet-a-label"><span>Collection</span><select id="facet-a" aria-label="Primary filter"></select></label>
+    <label id="facet-b-label"><span>Type</span><select id="facet-b" aria-label="Secondary filter"></select></label>
+    <label id="facet-c-label"><span>Region</span><select id="facet-c" aria-label="Additional filter"></select></label>
+    <label>Sort<select id="sort"><option value="recent">Newest first</option><option value="old">Oldest first</option><option value="title">Title A–Z</option></select></label>
+    <button type="button" id="reset">Reset</button>
+  </form>
+  <p id="status" role="status" aria-live="polite">Loading source records…</p>
+  <div id="records" class="records"></div>
+  <nav class="pagination" id="pagination" aria-label="Result pages" hidden><button type="button" id="previous">← Previous</button><span id="page-label"></span><button type="button" id="next">Next →</button></nav>
+</section>
+<section class="source-section" aria-labelledby="methods-heading">
+  <h2 id="methods-heading">Coverage and sources</h2>
+  <p>This index covers selected aggregated wholesale fibre-to-the-premises (FTTP) rates in CRTC orders. It omits retail internet prices and does not calculate customer bills. Check the linked orders and official carrier tariff pages for applicable conditions and later changes.</p>
+  <p id="method"></p>
+  <ul id="sources"><li><a href="https://crtc.gc.ca/eng/archive/2026/2026-77.htm" target="_blank" rel="noopener noreferrer">Official source documentation ↗</a></li></ul>
+</section>
+<dialog id="detail" aria-labelledby="detail-title">
+  <form method="dialog" class="dialog-close"><button aria-label="Close details">Close ×</button></form>
+  <p class="detail-kicker" id="detail-kicker"></p>
+  <h2 id="detail-title"></h2>
+  <p id="detail-summary"></p>
+  <img id="detail-image" alt="Preview supplied by the original archive" hidden referrerpolicy="no-referrer">
+  <dl id="detail-fields"></dl>
+  <div id="detail-links" class="detail-links"></div>
+  <section id="history" hidden>
+    <h3>Comparable published amounts</h3>
+    <p>Each amount is tied to its order and published effective date. Some final amounts also apply retroactively.</p>
+    <ol id="history-list"></ol>
+  </section>
+</dialog>
+</main>
+<footer class="dark"><div class="wrap"><a href="https://coolcode.ca/">← CoolCode workbench</a><a href="https://github.com/jsdyer/tariffxray">Source code ↗</a></div></footer>
+</body>
+</html>
