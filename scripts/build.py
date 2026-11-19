@@ -29,7 +29,7 @@ def row(table, name, kind, amount, unit, qualifier=""):
     }[kind]
     summary = f"{explanation} {unit}."
     fields = {
-        "Provider": carrier, "Market": region, "Tariff item family": item, "Charge type": kind,
+        "Provider": carrier, "Who pays": "Internet provider buying wholesale network service", "Market": region, "Tariff item family": item, "Charge type": kind,
         "Amount": money, "Billing measure": unit, "Order": f"CRTC {order}", "Order status": status,
         "Published effective date": date,
     }
