@@ -37,7 +37,7 @@ jobs:
           if (( ${#tests[@]} )); then
             node --test "${tests[@]}"
           fi
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
@@ -54,4 +54,4 @@ jobs:
     steps:
       - name: Publish GitHub Pages
         id: publish
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
